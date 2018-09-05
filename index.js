@@ -9,18 +9,18 @@ function inOrder(currentNode){
 }
 
 function findOrAdd(rootNode, newNode) {
- let currentNode = rootNode;
- if (newNode.data < currentNode.data) {
-   if (currentNode.left) {
-     findOrAdd(currentNode, newNode)
-   } else {
-     currentNode.left = newNode
-   }
- } else if (newNode.data < currentNode.data) {
-     if (currentNode.right) {
-       findOrAdd(currentNode, newNode)
-     } else {
-       currentNode.right = newNode;
-     }
-   }
+  let currentNode = rootNode;
+  if (newNode.data < currentNode.data) {
+    if (currentNode.left) {
+      findOrAdd(currentNode, newNode)
+    } else {
+      currentNode.left = newNode;
+    }
+  } else if (newNode.data < currentNode.data) {
+      if (currentNode.right) {
+        findOrAdd(currentNode, newNode)
+      } else {
+        currentNode.right = newNode;
+      }
+    }
  }
