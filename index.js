@@ -12,13 +12,13 @@ function findOrAdd(rootNode, newNode) {
   let currentNode = rootNode;
   if (newNode.data < currentNode.data) {
     if (currentNode.left) {
-      return findOrAdd(currentNode, newNode)
+      return findOrAdd(currentNode.left, newNode)
     } else {
       currentNode.left = newNode;
     }
   } else if (newNode.data < currentNode.data) {
       if (currentNode.right) {
-        return findOrAdd(currentNode, newNode)
+        return findOrAdd(currentNode.right, newNode)
       } else {
         currentNode.right = newNode;
       }
