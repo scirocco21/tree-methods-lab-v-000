@@ -29,7 +29,7 @@ function findOrAdd(rootNode, newNode) {
 
  function max(node) {
    if (node.left) {
-     return max(node.eft)
+     return max(node.left)
    } else {
      return node
    }
