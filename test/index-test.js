@@ -42,22 +42,7 @@ describe('#findOrAdd', function() {
     let secondNewNode = {data: 7, left: null, right: null}
     let thirdNewNode = {data: 9, left: null, right: null}
     findOrAdd(rootNode, firstNewNode)
-    findOrAdd(rootNode, second function findOrAdd(rootNode, newNode) {
-  let currentNode = rootNode;
-  if (newNode.data < currentNode.data) {
-    if (currentNode.left) {
-      findOrAdd(currentNode, newNode)
-    } else {
-      currentNode.left = newNode
-    }
-  } else if (newNode.data < currentNode.data) {
-      if (currentNode.right) {
-        findOrAdd(currentNode, newNode)
-      } else {
-        currentNode.right = newNode;
-      }
-    }
-  }NewNode)
+    findOrAdd(rootNode, secondNewNode)
     expect(rootNode.left).toEqual(firstNewNode)
     expect(rootNode.right).toEqual(secondNewNode)
     findOrAdd(rootNode, thirdNewNode)
