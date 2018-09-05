@@ -22,5 +22,7 @@ function findOrAdd(rootNode, newNode) {
       } else {
         return currentNode.right = newNode;
       }
+    } else {
+      return true
     }
  }
