@@ -23,4 +23,4 @@ function findOrAdd(rootNode, newNode) {
         currentNode.right = newNode;
       }
     }
-}
+  }
