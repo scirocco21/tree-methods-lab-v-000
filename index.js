@@ -35,3 +35,12 @@ function findOrAdd(rootNode, newNode) {
      return node
    }
  }
+
+ function max(node) {
+   if (node.left) {
+     node = node.left;
+     return max(node.left)
+   } else {
+     return node
+   }
+ }
