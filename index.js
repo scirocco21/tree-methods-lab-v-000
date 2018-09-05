@@ -7,3 +7,4 @@ function inOrder(currentNode){
     inOrder(currentNode.right)
   }
 }
+
