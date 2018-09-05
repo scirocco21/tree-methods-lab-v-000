@@ -16,7 +16,7 @@ function findOrAdd(rootNode, newNode) {
     } else {
       return currentNode.left = newNode;
     }
-  } else if (newNode.data  currentNode.data) {
+  } else if (newNode.data > currentNode.data) {
       if (currentNode.right) {
         return findOrAdd(currentNode.right, newNode)
       } else {
