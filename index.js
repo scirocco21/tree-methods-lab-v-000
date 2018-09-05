@@ -27,4 +27,6 @@ function findOrAdd(rootNode, newNode) {
     }
  }
 
- function max
+ function max(node) {
+   
+ }
