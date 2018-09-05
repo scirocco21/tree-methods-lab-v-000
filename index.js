@@ -30,7 +30,7 @@ function findOrAdd(rootNode, newNode) {
  function max(node) {
    if (node.right) {
      node = node.right;
-     return max(node.right)
+     return max(node)
    } else {
      return node
    }
@@ -39,7 +39,7 @@ function findOrAdd(rootNode, newNode) {
  function min(node) {
    if (node.left) {
      node = node.left;
-     return min(node.left)
+     return min(node)
    } else {
      return node
    }
